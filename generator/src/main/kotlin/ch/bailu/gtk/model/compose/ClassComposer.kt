@@ -38,5 +38,6 @@ class ClassComposer : CodeComposer() {
             writer.writeGetTypeFunction(structureModel)
         }
         writer.writeEndInstance()
+        writer.close()
     }
 }

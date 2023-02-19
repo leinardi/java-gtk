@@ -33,4 +33,5 @@ interface CodeWriter  {
     fun writeEndStruct()
     fun writeBeginInstace(namespaceModel: NamespaceModel)
     fun writeEndInstance()
+    fun close()
 }

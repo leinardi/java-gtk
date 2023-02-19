@@ -102,4 +102,5 @@ class JavaDocWriter(private val out: TextWriter, val doc: JavaDoc) : CodeWriter 
     override fun writeEndStruct() {}
     override fun writeBeginInstace(namespaceModel: NamespaceModel) {}
     override fun writeEndInstance() {}
+    override fun close() {}
 }

@@ -18,7 +18,7 @@ dependencies {
      *  xml parser implementation
      */
     implementation("net.sf.kxml:kxml2:2.3.0")
-
+    implementation("com.squareup:kotlinpoet:1.12.0")
 }
 
 
@@ -40,7 +40,7 @@ tasks.register("generate", JavaExec::class) {
 
     args(setOf(
             "-i", "/usr/share/gir-1.0",
-            "-j", "${project.getRootDir()}/java-gtk/build/generated/src/main/java/ch/bailu/gtk/"))
+            "-j", "${project.getRootDir()}/generator/build/generated/src/main/kotlin/"))
 }
 
 tasks.compileJava {

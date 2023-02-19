@@ -20,7 +20,7 @@ class StructureModel : Model {
     val apiName: String
     val nameSpaceModel: NamespaceModel
 
-    private var parent: StructureModel
+    var parent: StructureModel
     private var models = ModelLists()
 
     val structureType: StructureType

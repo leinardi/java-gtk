@@ -5,7 +5,7 @@ import ch.bailu.gtk.model.StructureModel
 import java.io.*
 
 class Directories(args: Array<String>) {
-    private val javaBaseDir: File
+    val javaBaseDir: File
     private val girBaseDir: File
 
 
@@ -50,7 +50,7 @@ class Directories(args: Array<String>) {
     @Throws(IOException::class)
     private fun getJavaFile(nameSpaceModel: NamespaceModel, className: String): File {
         val directory = File(javaBaseDir, nameSpaceModel.namespace)
-        return File(createDirectory(directory), "$className.java")
+        return File(createDirectory(directory), "$className.kt")
     }
 
     @Throws(IOException::class)
